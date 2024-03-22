@@ -1,6 +1,6 @@
 # GitHub Deployments [![View Action](https://img.shields.io/badge/view-github%20action-yellow.svg)](https://bobheadxi.dev/r/deployments/) [![pipeline](https://github.com/bobheadxi/deployments/actions/workflows/pipeline.yaml/badge.svg)](https://github.com/bobheadxi/deployments/actions/workflows/pipeline.yaml)
 
-`bobheadxi/deployments` is a [GitHub Action](https://github.com/features/actions) for working painlessly with [GitHub deployment statuses](https://docs.github.com/en/rest/reference/deployments).
+`ichebbi/deployments` is a [GitHub Action](https://github.com/features/actions) for working painlessly with [GitHub deployment statuses](https://docs.github.com/en/rest/reference/deployments).
 Instead of exposing convoluted Action configuration that mirrors that of the [GitHub API](https://developer.github.com/v3/repos/deployments/) like some of the other available Actions do, this Action simply exposes a number of configurable, easy-to-use "steps" common to most deployment lifecycles.
 
 > 📢 This project is in need of additional maintainers - if you are interested in helping out please [let me know](https://github.com/ichebbi/deployments/discussions/103)!
