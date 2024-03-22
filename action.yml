@@ -1,6 +1,6 @@
-name: GitHub Deployments
+name: GitHub Deployments (Fork)
 description: GitHub action for working painlessly with deployment statuses.
-author: bobheadxi
+author: ichebbi
 branding:
   icon: bookmark
   color: yellow

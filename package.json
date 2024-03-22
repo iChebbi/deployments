@@ -1,6 +1,6 @@
 {
-  "name": "@bobheadxi/deployments",
-  "version": "0.0.0",
+  "name": "@ichebbi/deployments",
+  "version": "1.5.0",
   "private": true,
   "description": "GitHub Action for working painlessly with deployment statuses",
   "main": "dist/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bobheadxi/deployments.git"
+    "url": "git+https://github.com/ichebbi/deployments.git"
   },
   "author": "bobheadxi",
   "license": "MIT",

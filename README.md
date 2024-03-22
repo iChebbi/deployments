@@ -3,7 +3,7 @@
 `bobheadxi/deployments` is a [GitHub Action](https://github.com/features/actions) for working painlessly with [GitHub deployment statuses](https://docs.github.com/en/rest/reference/deployments).
 Instead of exposing convoluted Action configuration that mirrors that of the [GitHub API](https://developer.github.com/v3/repos/deployments/) like some of the other available Actions do, this Action simply exposes a number of configurable, easy-to-use "steps" common to most deployment lifecycles.
 
-> 📢 This project is in need of additional maintainers - if you are interested in helping out please [let me know](https://github.com/bobheadxi/deployments/discussions/103)!
+> 📢 This project is in need of additional maintainers - if you are interested in helping out please [let me know](https://github.com/ichebbi/deployments/discussions/103)!
 
 - [Configuration](#configuration)
   - [`step: start`](#step-start)
@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: start deployment
-      uses: bobheadxi/deployments@v1
+      uses: ichebbi/deployments@v1
       id: deployment
       with:
         step: start
@@ -37,7 +37,7 @@ jobs:
       # ...
 
     - name: update deployment status
-      uses: bobheadxi/deployments@v1
+      uses: ichebbi/deployments@v1
       if: always()
       with:
         step: finish
@@ -112,7 +112,7 @@ jobs:
   deploy:
     steps:
     - name: start deployment
-      uses: bobheadxi/deployments@v1
+      uses: ichebbi/deployments@v1
       id: deployment
       with:
         step: start
@@ -140,7 +140,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: start deployment
-      uses: bobheadxi/deployments@v1
+      uses: ichebbi/deployments@v1
       id: deployment
       with:
         step: start
@@ -189,7 +189,7 @@ jobs:
       # ...
 
     - name: update deployment status
-      uses: bobheadxi/deployments@v1
+      uses: ichebbi/deployments@v1
       if: always()
       with:
         step: finish
@@ -237,7 +237,7 @@ jobs:
       # ...
 
     - name: mark environment as deactivated
-      uses: bobheadxi/deployments@v1
+      uses: ichebbi/deployments@v1
       with:
         step: deactivate-env
         token: ${{ secrets.GITHUB_TOKEN }}
@@ -262,13 +262,13 @@ Refer to the [core configuration](#configuration) for available [`inputs`](https
 
 The argument `debug: true` can be provided to print arguments used by `deployments` and log debug information.
 
-If you run into an problems or have any questions, feel free to open an [issue](https://github.com/bobheadxi/deployments/issues) or [discussion](https://github.com/bobheadxi/deployments/discussions)!
+If you run into an problems or have any questions, feel free to open an [issue](https://github.com/ichebbi/deployments/issues) or [discussion](https://github.com/ichebbi/deployments/discussions)!
 
 <br />
 
 ## Migrating to v1
 
-`bobheadxi/deployments@v1` makes the following breaking changes from `v0.6.x`:
+`ichebbi/deployments@v1` makes the following breaking changes from `v0.6.x`:
 
 - **CHANGED: `no_override` is now `override`**, and the default behaviour is `override: true` in `step: finish` (`step: start` behaviour remains unchanged, but you can now set `override: true` on it now as well).
 - **CHANGED: `log_args` is now `debug`**, but does the same thing as before.
@@ -279,8 +279,8 @@ If you run into an problems or have any questions, feel free to open an [issue](
 Then you can change your workflow to target the `v1` tag, and automatically receive updates going forward:
 
 ```diff
-- uses: bobheadxi/deployments@v0.6.2
-+ uses: bobheadxi/deployments@v1
+- uses: ichebbi/deployments@v0.6.2
++ uses: ichebbi/deployments@v1
 ```
 
 ## Migrating to v1.2.0
